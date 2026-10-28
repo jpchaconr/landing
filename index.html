@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>En proceso</title>
+  <meta name="description" content="Sitio en construcción. Algo nuevo está en camino.">
+  <meta name="theme-color" content="#0b0b0f">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%237c5cff'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="glow glow--a" aria-hidden="true"></div>
+  <div class="glow glow--b" aria-hidden="true"></div>
+  <div class="grid" aria-hidden="true"></div>
+
+  <main class="hero">
+    <span class="badge">
+      <span class="dot" aria-hidden="true"></span>
+      Trabajando en ello
+    </span>
+
+    <h1 class="title">
+      EN PROCESO<span class="dots" aria-hidden="true"><span>.</span><span>.</span><span>.</span><span>.</span></span>
+    </h1>
+
+    <p class="subtitle">
+      Estamos construyendo algo nuevo. Vuelve pronto para ver el resultado.
+    </p>
+
+    <div class="progress" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68">
+      <div class="progress__bar"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; <span id="year"></span> &middot; Próximamente
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
